@@ -31,7 +31,7 @@ public class LoginController {
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "redirect:/emp";
+		return "redirect:/emp/";
 //		model.setViewName("home");
 //		return model;
 	}
