@@ -28,18 +28,18 @@ import com.jwt.model.User;
 import com.jwt.service.EmployeeService;
 
 @Controller
-//@RequestMapping(value = "/emp")
+@RequestMapping(value = "/emp")
 public class EmployeeController {
 			
 	@Autowired
 	private EmployeeService employeeService;
 	
-	@RequestMapping(value = "/emp")
+	@RequestMapping(value = "/")
 	public ModelAndView showPage(ModelAndView model) throws IOException {
 		System.out.println("/emp");
-		model.setViewName("home");
-		return model;
-//		return "home";
+		// model.setViewName("home");
+		// return model;
+		return "home";
 	}
 		
 	
